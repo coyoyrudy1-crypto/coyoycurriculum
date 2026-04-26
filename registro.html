@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url("fondo.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+}
+
+/* NAV SUPERIOR */
+nav {
+    background-color: #00bfff;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav a {
+    color: yellow;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: yellow;
+    color: #00bfff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* CONTENIDO */
+.contenedor {
+    margin: 80px auto;
+    max-width: 600px;
+}
+
+.card {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px yellow;
+}
+
+/* FORM */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-top: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input, textarea {
+    width: 60%;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+}
+
+textarea {
+    height: 80px;
+}
+
+/* BOTONES */
+button, .boton {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: #00bfff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover, .boton:hover {
+    background-color: white;
+    color: #00bfff;
+}
+</style>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<h1>Registro de Contacto</h1>
+
+<div class="contenedor">
+  <div class="card">
+
+    <form action="https://formspree.io/f/xvzdngjp" method="POST">
+
+      <input type="hidden" name="_subject" value="Nuevo mensaje desde tu CV">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="index.html">
+
+      <ul>
+        <li>
+          <label>Nombre:</label>
+          <input type="text" name="name" required>
+        </li>
+
+        <li>
+          <label>Correo:</label>
+          <input type="email" name="email" required>
+        </li>
+
+        <li>
+          <label>Mensaje:</label>
+          <textarea name="message" required></textarea>
+        </li>
+
+        <li>
+          <button type="submit">Enviar</button>
+        </li>
+      </ul>
+
+    </form>
+
+    <br>
+    <a href="index.html" class="boton">⬅ Volver al Inicio</a>
+
+  </div>
+</div>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="datos.html">Datos</a>
+  <a href="academico.html">Académico</a>
+  <a href="Habilidades.html">Habilidades</a>
+  <a href="laborales.html">Laborales</a>
+  <a href="hobbies.html">Hobbies</a>
+  <a href="referencias.html">Referencias</a>
+  <a href="registro.html">Registro</a>
+</nav>
+
+</body>
+</html>
